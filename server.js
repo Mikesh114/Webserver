@@ -15,7 +15,7 @@ var authenticate = {requireAuthentication: function(req, res, next){
 app.use(authenticate.logger);
 
 app.get('/about', authenticate.requireAuthentication, function(req, res){
-   res.send('about us'); 
+   res.send('About Us!!'); 
 });
 
 
